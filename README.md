@@ -2,7 +2,7 @@
 This is the MAXScript that connects between the two targets in the bone.  
 これは２つのターゲット間をボーンで繋ぐMAXScriptです。
 
-![Sample](https://github.com/apras/MAXScript-ScalableBone/Sample_ScalableBone.gif)  
+![Sample](https://github.com/apras/MAXScript-ScalableBone/blob/master/Sample_ScalableBone.gif)  
 
 ## How to Install
 * Please copy "(MAXDIR) \ script \ startup" to "ScalableBone.ms".  
