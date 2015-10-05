@@ -37,10 +37,13 @@ version:1
 	
 	on attachedToNode obj do
 	(
-		if ((classof  obj.baseObject) != BoneGeometry) then
+		if (obj != undefined) then
 		(
-			messagebox "Only \"BoneGeometry\" can be added!! "
-			deleteModifier obj this
+			if ((classof  obj.baseObject) != BoneGeometry) then
+			(
+				messagebox "Only \"BoneGeometry\" can be added!! "
+				deleteModifier obj this
+			)
 		)		
 	)
 	
@@ -70,6 +73,9 @@ version:1
 			
 			if (NodeTo != undefined) then
 				pb_to.text = NodeTo.name			
+			
+			if (NodeUp != undefined) then
+				pb_up.text = NodeUp.name
 			
 			func_ApplyEnabled()
 		)
